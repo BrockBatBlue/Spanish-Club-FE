@@ -1,36 +1,76 @@
-import React from "react";
-import { BrowseRouter as Router } from "react-router-dom";
-import Login from "./Components/Login";
-import Signup from "./Components/Signup";
-import Home from "./Components/Home";
-import Homework from "./Components/Homework";
-import Navbar from "./Elements/Navbar";
-import Footer from "./Elements/Footer";
-import LessonsCalendar from "./Elements/LessonsCalendar";
-import HwSubmission from "./Elements/HwSubmission";
-import TeacherProfile from "./Components/TeacherProfile";
-import StudentProfile from "./Components/StudentProfile";
-import LessonPlan from "./Components/LessonPlan";
-import Graded from "./Components/Graded";
-import Grading from "./Components/Grading";
+import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Login from "./Components/Pages/Login";
+import Administrator from "./Components/Pages/Administrator";
+import Home from "./Components/Pages/Home";
+import Homework from "./Components/Pages/Homework";
+import Navbar from "./Components/Elements/Navbar";
+import Footer from "./Components/Elements/Footer";
+import LessonsCalendar from "./Components/Elements/LessonsCalendar";
+import HwSubmission from "./Components/Elements/HwSubmission";
+import TeacherProfile from "./Components/Pages/TeacherProfile";
+import StudentProfile from "./Components/Pages/StudentProfile";
+import LessonPlan from "./Components/Pages/LessonPlan";
+import Graded from "./Components/Pages/Graded";
+import Grading from "./Components/Pages/Grading";
+import ContactUs from "./Components/Pages/ContactUs";
+import Attendance from "./Components/Pages/Attendance";
 import "./App.css";
+import axios from "axios";
+
+// const [isLogged, setIsLogged] = useState(
+//   JSON.parse(localStorage.getItem("isLogged")) || false
+// );
 
 function App() {
+  // const [userName, setUserName] = useState(
+  //   localStorage.getItem("username") || ""
+  // );
+
+  // const [userId, setUserId] = useState(localStorage.getItem("userId") || "");
+
+  // const [isLogged, setIsLogged] = useState(
+  //   JSON.parse(localStorage.getIemt("isLogged")) || false
+  // );
+  // const [isLoggedStu, setIsLoggedStu] = useState(
+  //   JSON.parse(localStorage.getItem("isLoggedStu")) || false
+  // );
+  // const [isLoggedTe, setIsLoggedTe] = useState(
+  //   JSON.parse(localStorage.getItem("isLoggedTe")) || false
+  // );
+  // const [isLoggedAdmin, setIsLoggedAdmin] = useState(
+  //   JSON.parse(localStorage.getItem("isLoggedAdmin")) || false
+  // );
+  // const [data, setData] = useState({
+  //   user: "",
+  //   setUser: (userName, userId) => {
+  //     setData({ ...data, user: userName });
+  //     setUserName(userName);
+  //     setUserId(userId);
+  //     userName ? setIsLogged(true) : setIsLogged(false);
+  //     localStorage.setItem("isLogged", JSON.stringify(userName ? true : false));
+  //     localStorage.setItem("userName", userName);
+  //     localStorage.setItem("userId", userId);
+  //   },
+  // });
+
   return (
-    <div className="App">
+    <div className="main">
       <Router>
         <Navbar />
+        <Route exact path="/" render={() => <Home />} />
+        <Route exact path="/login" render={() => <Login />} />
+        <Route exact path="/administrator" render={() => <Administrator />} />
+        <Route exact path="/homework" render={() => <Homework />} />
+        <LessonsCalendar /> <HwSubmission />
+        <Route exact path="/teacherprofile" render={() => <TeacherProfile />} />
+        <Route exact path="/studentprofile" render={() => <StudentProfile />} />
+        <Route exact path="/lessonplan" render={() => <LessonPlan />} />
+        <Route exact path="/graded" render={() => <Graded />} />
+        <Route exact path="/grading" render={() => <Grading />} />
+        <Route exact path="/contact" render={() => <ContactUs />} />
+        <Route exact path="/attendance" render={() => <Attendance />} />
       </Router>
-      <Route exact path="/" render={() => <Home />} />
-      <Route exact path="/login" render={() => <Login />} />
-      <Route exact path="/signup" render={() => <Signup />} />
-      <Route exact path="/homework" render={() => <Homework />} />
-      <LessonsCalendar /> <HwSubmission />
-      <Route exact path="/teacherprofile" render={() => <TeacherProfile />} />
-      <Route exact path="/studentprofile" render={() => <StudentProfile />} />
-      <Route exact path="/lessonplan" render={() => <LessonPlan />} />
-      <Route exact path="/graded" render={() => <Graded />} />
-      <Route exact path="/grading" render={() => <Grading />} />
       <Footer />
     </div>
   );

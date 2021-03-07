@@ -1,5 +1,5 @@
 import React from "react";
-import "../Styles/Components/Grading.css";
+import "../../Styles/Pages/Grading.css";
 
 function Grading() {
   return <></>;

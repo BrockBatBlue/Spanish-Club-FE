@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: calc(100vh - 101px - 100px);
+  min-width: 100%;
+  margin-top: clamp(1px, 10vh, 20px);
+  margin-left: clamp(1px, 10vw, 30px);
+  margin-right: clamp(1px, 10vw, 30px);
+}
+
+.left-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: clamp(1px, 10vw, 30px);
+  margin-right: clamp(1px, 5vw, 30px);
+}
+.homeworkInbox {
+  display: flex;
+  flex-direction: column;
+}
+.calendarPlaceholder {
+  max-width: clamp(200px, 70vw, 700px);
+}
+.mainPage {
+  display: flex;
+  flex-direction: column;
+  margin-left: 300px;
+}
+form {
+  max-width: 750px;
+}

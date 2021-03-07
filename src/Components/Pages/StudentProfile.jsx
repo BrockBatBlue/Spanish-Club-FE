@@ -1,8 +1,8 @@
 import React from "react";
-import "../Styles/Components/StudentProfile.css";
+import "../../Styles/Pages/StudentProfile.css";
 
 function StudentProfile() {
-  return <></>;
+  return <>Student space</>;
 }
 
 export default StudentProfile;
