@@ -15,6 +15,8 @@ import Graded from "./Components/Pages/Graded";
 import Grading from "./Components/Pages/Grading";
 import ContactUs from "./Components/Pages/ContactUs";
 import Attendance from "./Components/Pages/Attendance";
+import AboutUs from "./Components/Pages/AboutUs";
+import OurServices from "./Components/Pages/OurServices";
 import "./App.css";
 import axios from "axios";
 
@@ -70,6 +72,8 @@ function App() {
         <Route exact path="/grading" render={() => <Grading />} />
         <Route exact path="/contact" render={() => <ContactUs />} />
         <Route exact path="/attendance" render={() => <Attendance />} />
+        <Route exact path="/aboutus" render={() => <AboutUs />} />
+        <Route exact path="/ourservices" render={() => <OurServices />} />
       </Router>
       <Footer />
     </div>
