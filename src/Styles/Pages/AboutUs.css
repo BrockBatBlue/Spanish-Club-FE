@@ -1,0 +1,9 @@
+#cardContainer {
+  margin: 0 !important;
+}
+.card {
+  background-color: #f6fad3;
+}
+.languageFlags {
+  height: 29.16vh;
+}
