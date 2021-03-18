@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { Component, useState, useEffect } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Login from "./Components/Pages/Login";
 import Administrator from "./Components/Pages/Administrator";

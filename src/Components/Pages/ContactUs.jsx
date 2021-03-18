@@ -1,8 +1,9 @@
 import React from "react";
 import "../../Styles/Pages/ContactUs.css";
+import ContactUsForm from "../Elements/ContactUsForm.jsx";
 
 function ContactUs() {
-  return <>Will figure this contact page out when I can</>;
+  return <ContactUsForm />;
 }
 
 export default ContactUs;

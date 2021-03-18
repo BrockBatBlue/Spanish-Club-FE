@@ -1,0 +1,25 @@
+.formContainer form h1 p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100vw !important;
+}
+.formRow
+
+.formStyles{
+    justify-content: center !important;
+}
+
+
+.textbox{
+    width: clamp(15vw, 40rem, 60vw);
+    height:clamp(25vh, 150vh, 600px);
+    border-width: 0;
+    border-radius: 5%;
+}
+.inputSize{
+    width: clamp(15vw, 40rem, 60vw);
+    height: clamp(5vh, 20vh, 60px);
+    border-radius: 5%;
+}
