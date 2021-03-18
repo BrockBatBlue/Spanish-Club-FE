@@ -9,7 +9,7 @@ function Home() {
         <div className="row d-flex  h-100 ">
           <div className="position-relative  w-100 h-25  d-flex">
             <div className="container-fluid align-self-start mt-2 mb-2">
-              <div className="row">
+              <div className="row landingTitle">
                 <div className="col-12 col-md-3">
                   <h4 className="mt-1 text-white display-3">
                     Welcome to Babel Library

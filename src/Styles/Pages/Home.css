@@ -13,16 +13,21 @@
 .mt-1 {
   font-weight: bolder;
   justify-content: flex-end;
-  padding-left: 15vw;
-  padding-top: 2vh;
+  padding-left: clamp(0.5vw, 15vw, 25vw);
+  padding-top: clamp(1vh, 1.5vh, 2vh);
   /* flex-wrap: nowrap !important; */
   min-width: 100vw;
 }
 
 #teachLanguages {
   padding: 0 !important;
+  font-size: clamp(5px, 8vw, 55px);
+  margin-left: clamp(1vw, 1vw, 2vw);
 }
 #learnMore {
   margin-top: 20vh !important;
   margin-left: 7vw;
+}
+.landingTitle h4{
+  font-size: clamp(5px, 10vw, 60px);
 }
