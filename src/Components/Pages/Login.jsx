@@ -1,8 +1,9 @@
 import React from "react";
 import "../../Styles/Pages/Login.css";
+import LoginForm from "../Elements/LoginForm.jsx";
 
 function Login() {
-  return <>Please Log in in here</>;
+  return <LoginForm />;
 }
 
 export default Login;

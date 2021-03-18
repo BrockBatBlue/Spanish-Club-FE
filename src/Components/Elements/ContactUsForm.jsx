@@ -35,7 +35,7 @@ class ContactUsForm extends Component {
                 <br />
                 <input
                   className="inputSize form-control"
-                  type="text"
+                  type="Name"
                   value={this.state.value}
                   onChange={this.handleChange}
                 />
@@ -46,7 +46,7 @@ class ContactUsForm extends Component {
                 <br />
                 <input
                   className="inputSize form-control"
-                  type="text"
+                  type="Email"
                   value={this.state.value}
                   onChange={this.handleChange}
                 />
