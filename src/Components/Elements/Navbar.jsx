@@ -22,7 +22,7 @@ function Navbar(isLoggedStu) {
   return (
     <nav className="navbar navbar-expand-lg">
       {/* <div className="container"> */}
-      <a className="navbar-brand" href="index.html">
+      <a className="babelBrand navbar-brand" href="index.html">
         <img src="./finalLogo.png" alt="UI Kit" style={{ width: "100%" }} />
       </a>
       <button
@@ -37,29 +37,29 @@ function Navbar(isLoggedStu) {
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
-        <ul className="navbar-nav ml-auto mr-sm-2 mt-2 mt-lg-0">
+        <ul className="responsiveNav navbar-nav ml-auto mr-sm-2 mt-2 mt-lg-0">
           <li className="nav-item active mr-3">
-            <a className="nav-link" href={Link}>
+            <a className="navLinks nav-link" href={Link}>
               Home <span className="sr-only">(current)</span>
             </a>
           </li>
           <li className="nav-item mr-3">
-            <a className="nav-link" href={Link}>
+            <a className="navLinks nav-link" href={Link}>
               About
             </a>
           </li>
           <li className="nav-item mr-3">
-            <a className="nav-link" href={Link}>
+            <a className="navLinks nav-link" href={Link}>
               Services
             </a>
           </li>
           <li className="nav-item mr-3">
-            <a className="nav-link" href={Link}>
+            <a className="navLinks nav-link" href={Link}>
               Our Work
             </a>
           </li>
           <li className="nav-item mr-3">
-            <a className="nav-link" href={Link}>
+            <a className="navLinks nav-link" href={Link}>
               Contacts
             </a>
           </li>

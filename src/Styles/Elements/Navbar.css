@@ -1,3 +1,16 @@
 nav {
   background-color: #484538 !important;
 }
+.babelBrand {
+  width: clamp(100px, 35vw, 197px);
+}
+.collapse{
+  display: flex;
+  justify-content: flex-end;
+}
+.responsiveNav{
+  margin-left:0 !important;
+}
+.navLinks{
+  font-size: clamp(0.25rem, 1vw, 15px);
+}
