@@ -1,11 +1,15 @@
 import React from "react";
 import "../../Styles/Pages/Home.css";
 import { Link } from "react-router-dom";
+import Background from "../../assets/images/Landing-Page.png";
 
 function Home() {
   return (
-    <section className="pt-4 pb-3 mt-0 d-flex bg-dark background-image">
-      <div className="container p-md-4">
+    <section
+      className="pt-4 pb-3 mt-0 d-flex container-fluid backgroundImage"
+      style={{ backgroundImage: "url(" + Background + ")" }}
+    >
+      <div className="container-fluid p-md-4">
         <div className="row d-flex  h-100 ">
           <div className="position-relative  w-100 h-25  d-flex">
             <div className="container-fluid align-self-start mt-2 mb-2">
@@ -25,13 +29,13 @@ function Home() {
             <div className="container-fluid align-self-center   pt-5 pt-md-1 mb-2">
               <div className="row justify-content-center">
                 <div className="col-12 col-md-6">
-                  <h1 id="teachLanguages" className="  mb-0 pt-sm-4 text-white">
+                  <h1 id="teachLanguages" className="  mb-0 pt-sm-4">
                     We Teach Language Courses
                   </h1>
                   <a
                     id="learnMore"
                     href={Link}
-                    className="btn btn-outline-light btn-danger mt-5"
+                    className="btn btn-outline btn-danger mt-5"
                   >
                     Find out more About Us!
                   </a>
@@ -40,8 +44,8 @@ function Home() {
             </div>
           </div>
           <div className="position-relative  w-100  h-25 d-flex">
-            <div className="container-fluid align-self-end  mt-5 mb-2">
-              <div className="row">
+            <div className="container-fluid twitterContainer align-self-end  mt-5 mb-2">
+              <div className="row twitterRow">
                 <div className="col-md-6 col-7">
                   <div className=" pt-0 d-inline-block">
                     <a href={Link} role="button" className=" btn btn-link mr-2">
