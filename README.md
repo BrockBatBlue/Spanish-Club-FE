@@ -7,7 +7,7 @@ A Language School Platform
 *WORK IN PROGRESS*
 
 # **Our Landing Page**
-![](public/LandingPageWork-In-Progress.jpg)
+![](src/assets/images/LandingPageWork-In-Progress.jpg)
 
 
 ## Table of Contents
