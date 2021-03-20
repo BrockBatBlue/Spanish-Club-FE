@@ -1,6 +1,12 @@
-.footer {
+/* .footer {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: deeppink;
+} */
+.footerStyles{
+  background-color: #f17300;
+}
+.linkColor{
+  color: #391463
 }

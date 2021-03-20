@@ -14,7 +14,7 @@ function Home() {
           <div className="position-relative  w-100 h-25  d-flex">
             <div className="container-fluid align-self-start mt-2 mb-2">
               <div className="row landingTitle">
-                <div className="col-12 col-md-3">
+                <div className="col-12 col-md-10">
                   <h4 className="mt-1 text-white display-3">
                     Welcome to Babel Library
                   </h4>
@@ -28,7 +28,7 @@ function Home() {
           <div className="position-relative  w-100 h-50  d-flex">
             <div className="container-fluid align-self-center   pt-5 pt-md-1 mb-2">
               <div className="row justify-content-center">
-                <div className="col-12 col-md-6">
+                <div className="col-12 col-md-8">
                   <h1 id="teachLanguages" className="  mb-0 pt-sm-4">
                     We Teach Language Courses
                   </h1>
