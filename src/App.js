@@ -74,8 +74,8 @@ function App() {
         <Route exact path="/attendance" render={() => <Attendance />} />
         <Route exact path="/aboutus" render={() => <AboutUs />} />
         <Route exact path="/ourservices" render={() => <OurServices />} />
+        <Footer />
       </Router>
-      <Footer />
     </div>
   );
 }
