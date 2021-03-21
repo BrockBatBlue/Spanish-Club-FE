@@ -26,6 +26,7 @@ class LoginForm extends Component {
         <div class="row text-center justify-content-center">
           <div class="col-12 col-md-9 col-lg-7">
             <h4 className="loginTitle">Please Log in</h4>
+            <br />
             <form className="loginFormStyles" onSubmit={this.handleSubmit}>
               <label>
                 User Name:
@@ -50,6 +51,7 @@ class LoginForm extends Component {
               </label>
               <br />
               <label>
+                <br />
                 <input
                   className="loginBtn btn-lg btn-primary"
                   type="submit"
