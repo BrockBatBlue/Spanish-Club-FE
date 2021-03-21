@@ -23,7 +23,7 @@ class ContactUsForm extends Component {
     return (
       <div className="formContainer container-lg ">
         <br />
-        <div class="row text-center justify-content-center">
+        <div class="row text-center">
           <div class="col-12 col-md-9 col-lg-7">
             <h1 className="contactTitle">Contact Us</h1>
             <p className="text-h3">
@@ -64,6 +64,7 @@ class ContactUsForm extends Component {
               </label>
               <br />
               <label>
+                <br />
                 <input
                   className="contactBtn btn-lg btn-primary"
                   type="submit"

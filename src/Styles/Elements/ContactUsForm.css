@@ -1,11 +1,16 @@
 .formContainer form h1 p{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-content: flex-end !important;
     align-items: center;
     width:100vw !important;
+    margin-left: 50vw;
 }
-.formRow
+.text-center{
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw !important;
+}
 
 .formStyles{
     justify-content: center !important;
