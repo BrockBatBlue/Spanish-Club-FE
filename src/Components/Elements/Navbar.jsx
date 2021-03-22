@@ -2,6 +2,7 @@ import React, { useContext, Context } from "react";
 import "../../Styles/Elements/Navbar.css";
 import { Link, useLocation } from "react-router-dom";
 import axios from "axios";
+import logo from "../../assets/images/finalLogo.png"
 
 function Navbar(isLoggedStu) {
   // const userStu = useContext(Context);
@@ -23,7 +24,7 @@ function Navbar(isLoggedStu) {
     <nav className="navbar navbar-expand-lg">
       {/* <div className="container"> */}
       <a className="babelBrand navbar-brand" href="index.html">
-        <img src="./finalLogo.png" alt="UI Kit" />
+        <img src={logo} alt="UI Kit" />
       </a>
       <button
         className="navbar-toggler"
@@ -38,17 +39,34 @@ function Navbar(isLoggedStu) {
       </button>
       <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul className="responsiveNav navbar-nav ml-auto mr-sm-2 mt-2 mt-lg-0">
-          <li className="nav-item active mr-3">
+          {/* <li className="nav-item active mr-3">
             <a className="navLinks nav-link text-white" href={Link}>
               Home <span className="sr-only">(current)</span>
             </a>
-          </li>
+          </li> */}
+
           <li className="nav-item mr-3">
-            <a className="navLinks nav-link text-white" href={Link}>
-              About
-            </a>
+            <Link className="navLinks nav-link text-white" to="/">Home</Link>
           </li>
+
           <li className="nav-item mr-3">
+            <Link className="navLinks nav-link text-white" to="/AboutUs">About Us</Link>
+          </li>
+
+          <li className="nav-item mr-3">
+            <Link className="navLinks nav-link text-white" to="/OurServices">Our Services</Link>
+          </li>
+
+          <li className="nav-item mr-3">
+            <Link className="navLinks nav-link text-white" to="/ContactUs">Contact Us</Link>
+          </li>
+
+          <li className="nav-item mr-3">
+            <Link className="navLinks nav-link text-white" to="/Login">Login</Link>
+          </li>
+
+
+          {/* <li className="nav-item mr-3">
             <a className="navLinks nav-link text-white" href={Link}>
               Services
             </a>
@@ -60,9 +78,9 @@ function Navbar(isLoggedStu) {
           </li>
           <li className="nav-item mr-3">
             <a className="navLinks nav-link text-white" href={Link}>
-              Contacts
+              Contact Us
             </a>
-          </li>
+          </li> */}
         </ul>
         <ul className="navbar-nav">
           <li className="nav-item dropdown">
@@ -82,7 +100,7 @@ function Navbar(isLoggedStu) {
                 src="http://via.placeholder.com/100/007bff/efefef"
                 alt="Htmlstream"
               />{" "}
-              John Doe
+              Elena
               <i className="fa fa-angle-down   "></i>
             </a>
             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
