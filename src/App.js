@@ -70,7 +70,7 @@ function App() {
         <Route exact path="/lessonplan" render={() => <LessonPlan />} />
         <Route exact path="/graded" render={() => <Graded />} />
         <Route exact path="/grading" render={() => <Grading />} />
-        <Route exact path="/contact" render={() => <ContactUs />} />
+        <Route exact path="/contactus" render={() => <ContactUs />} />
         <Route exact path="/attendance" render={() => <Attendance />} />
         <Route exact path="/aboutus" render={() => <AboutUs />} />
         <Route exact path="/ourservices" render={() => <OurServices />} />
