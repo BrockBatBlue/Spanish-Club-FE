@@ -6,12 +6,14 @@ function OurServices() {
   return (
     <>
       <section className="pt-5 pb-5">
-        <div className=" ourServicesContainer container">
-          <div className="row mb-md-4">
-            <div className="col-12 col-lg-8 text-center text-lg-left">
-              <h3 className="text-primary small">What we do</h3>
-              <h2 className=" ">Our Services To You</h2>
-              <p className="lead">
+        <div className=" ourServicesContainer container-fluid">
+          <div className="row servicesRow">
+            <div className="col-lg-12">
+              <h3 className="text-primary lg introText">
+                Here's what we do...
+              </h3>
+              <h2 className="servicesText">Our Services To You</h2>
+              <p className="lead text-white paragraph">
                 We provide 100% online synchronous language courses to students
                 of all ages and language levels on our Secure platform.
               </p>
@@ -89,11 +91,11 @@ function OurServices() {
               </div>
             </div>
           </div>
-          <div className="row pt-3 align-items-center justify-content-center">
-            <div className="col text-center">
+          <div className="row pt-3 align-items-center buttonRow">
+            <div className="col buttonCol">
               <a
                 href={Link}
-                className="btn btn-primary  btn-rounded shadow py-3 px-5"
+                className="btn btn-primary signUpBtn  btn-rounded shadow py-3 px-5"
               >
                 Sign Up
               </a>

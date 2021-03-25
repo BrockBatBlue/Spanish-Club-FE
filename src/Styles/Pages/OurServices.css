@@ -1,7 +1,38 @@
+.servicesRow{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    /* height: 30vh; */
+}
+.introText{
+    padding-left: 5vw;
+    text-shadow: 5px 5px 5px darkgrey;
+    font-weight: 700;
+}
+.servicesText{
+    display: flex;
+    justify-content: center !important;
+    padding-top: 5vh;
+    font-weight: 900;
+}
+.paragraph{
+    padding-top: 8vh;
+    padding-left: 10vw;
+    font-weight: bolder;
+    text-shadow: 3px 3px 3px darkgrey;
+}
 #servicesCards {
     max-width: 95%;
+    margin-left: 2vw;
 }
 .servicesIcon {
     display:flex;
     font-size: x-large;
+}
+.buttonCol{
+    display: flex;
+    justify-content: center;
+}
+.buttonRow{
+    margin: 0;
 }

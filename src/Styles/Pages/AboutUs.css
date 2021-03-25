@@ -2,7 +2,8 @@
   margin: 0 !important;
 }
 .card {
-  background-color: #f6fad3;
+  background-color: #cdcdcd;
+  box-shadow: 10px 10px 60px darkgrey !important;
 }
 .languageFlags {
   height: 29.16vh;
