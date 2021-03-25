@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <>
-      <section className="footerStyles">
+      <section className="footerStyles container-fluid">
         <footer className="pt-5  bg text-white">
           <div className="container-fluid">
             <div className="row align-items-top text-center text-md-left">
-              <div className="col-12 col-sm-6 col-md-4 float-left" >
+              <div className="col-12 col-sm-6 col-md-4 float-left">
                 <h3>
                   <strong>The Babel Library</strong>
                 </h3>
@@ -44,13 +44,14 @@ function Footer() {
                   <strong>About Us</strong>
                 </h3>
                 <p>
-                  The Babel Library is an online language platform that helps you reach your next language goal.
+                  The Babel Library is an online language platform that helps
+                  you reach your next language goal.
                 </p>
                 <br></br>
                 <br></br>
                 <div className="col text-center">
-                © 2018 Bootstraptor. All Rights Reserved
-              </div>
+                  © 2018 Bootstraptor. All Rights Reserved
+                </div>
                 {/* <p className="text-h3">
                   <a hre={Link}>
                     <i className="fab fa-twitter" aria-hidden="true"></i>
