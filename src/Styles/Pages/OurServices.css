@@ -1,7 +1,15 @@
+.backgroundServices{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* height: clamp(200vh, 50vh, 110vh); */
+    height:max-content;
+}
 .servicesRow{
     display:flex;
     flex-direction: row;
     justify-content: center;
+    align-content: center;
+    margin-top: 10vh;
     /* height: 30vh; */
 }
 .introText{
@@ -20,10 +28,18 @@
     padding-left: 10vw;
     font-weight: bolder;
     text-shadow: 3px 3px 3px darkgrey;
+    z-index: 1;
 }
-#servicesCards {
+.servicesCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
     max-width: 95%;
-    margin-left: 2vw;
+    margin: 10vh 0 6vh 2vw !important;
+    z-index: 1;
+    height: clamp(auto, 70vh, 75vh);
 }
 .servicesIcon {
     display:flex;
@@ -32,7 +48,5 @@
 .buttonCol{
     display: flex;
     justify-content: center;
-}
-.buttonRow{
-    margin: 0;
+    /* margin-top: clamp(auto, 5vh, 6vh); */
 }

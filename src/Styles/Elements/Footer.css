@@ -5,7 +5,16 @@
   background-color: deeppink;
 } */
 .footerStyles{
+  /* margin-top: 1rem;
+  padding:1rem; */
   background-color: #f17300;
+  /* position: fixed;
+  bottom:0;
+  left:0;
+  width: 100%;
+  z-index: -1S; */
+
+
 }
 .linkColor{
   color: #391463
