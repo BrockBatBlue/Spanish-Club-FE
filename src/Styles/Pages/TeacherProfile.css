@@ -20,7 +20,7 @@
   display: flex;
   flex-direction: column;
 }
-.calendarPlaceholder {
+.calendar {
   max-width: clamp(200px, 70vw, 700px);
 }
 .mainPage {
