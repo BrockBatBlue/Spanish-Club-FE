@@ -17,6 +17,8 @@ import ContactUs from "./Components/Pages/ContactUs";
 import Attendance from "./Components/Pages/Attendance";
 import AboutUs from "./Components/Pages/AboutUs";
 import OurServices from "./Components/Pages/OurServices";
+import ResourceUpload from "./Components/Pages/ResourceUpload.jsx";
+import DiscussionPg from "./Components/Pages/DiscussionPg.jsx";
 import "./App.css";
 import axios from "axios";
 
@@ -74,6 +76,8 @@ function App() {
         <Route exact path="/attendance" render={() => <Attendance />} />
         <Route exact path="/aboutus" render={() => <AboutUs />} />
         <Route exact path="/ourservices" render={() => <OurServices />} />
+        <Route exact path="/discussion" render={() => <DiscussionPg />} />
+        <Route exact path="/resources" render={() => <ResourceUpload />} />
       </Router>
       <Footer />
     </div>
