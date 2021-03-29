@@ -1,6 +1,9 @@
 import React from "react";
 import "../../Styles/Elements/SideNav.css";
 import { Link } from "react-router-dom";
+import Attendance from "../Pages/Attendance.jsx";
+import Forum from "../Elements/Forum.jsx";
+import ResourceUploads from "../Pages/ResourceUpload.jsx";
 
 function SideNav() {
   return (
@@ -8,29 +11,25 @@ function SideNav() {
       <div className="Left-bar">
         <h4 className="teacherGreet">Greetings Elena!</h4>
         <hr />
-        <h6>Homework Inbox</h6>
+        <h6>Attendance</h6>
+        <Link to="/attendance" className="attendanceSheet" href={Attendance}>
+          English
+        </Link>
+        <h6>Discussion Forum</h6>
+        <Link to="/discussion" className="forum" href={Forum}>
+          English
+        </Link>
+        <h6>Google Classroom</h6>
         <a
-          className="homeworkInbox"
-          href="https://edu.google.com/products/classroom/"
-        >
-          Spanish
-        </a>
-        <a
-          className="homeworkInbox"
+          className="gClassroom"
           href="https://edu.google.com/products/classroom/"
         >
           English
         </a>
-        <a
-          className="homeworkInbox"
-          href="https://edu.google.com/products/classroom/"
-        >
-          German
-        </a>
-        <hr />
-        <h6>Student Attendance</h6>
-        <Link to="/attendance" className="attendance">
-          Attendance
+        <h6>Resource Uploads</h6>
+        <Link to="/resources" className="uploads" href={ResourceUploads}>
+          {" "}
+          English
         </Link>
       </div>
     </div>
