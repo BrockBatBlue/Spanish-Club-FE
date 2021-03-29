@@ -2,7 +2,7 @@ import React, { useContext, Context } from "react";
 import "../../Styles/Elements/Navbar.css";
 import { Link, useLocation } from "react-router-dom";
 import axios from "axios";
-import logo from "../../assets/images/finalLogo.png"
+import logo from "../../assets/images/babelLibraryColors.png";
 
 function Navbar(isLoggedStu) {
   // const userStu = useContext(Context);
@@ -46,25 +46,34 @@ function Navbar(isLoggedStu) {
           </li> */}
 
           <li className="nav-item mr-3">
-            <Link className="navLinks nav-link text-white" to="/">Home</Link>
+            <Link className="navLinks nav-link text-white" to="/">
+              Home
+            </Link>
           </li>
 
           <li className="nav-item mr-3">
-            <Link className="navLinks nav-link text-white" to="/AboutUs">About Us</Link>
+            <Link className="navLinks nav-link text-white" to="/AboutUs">
+              About Us
+            </Link>
           </li>
 
           <li className="nav-item mr-3">
-            <Link className="navLinks nav-link text-white" to="/OurServices">Our Services</Link>
+            <Link className="navLinks nav-link text-white" to="/OurServices">
+              Our Services
+            </Link>
           </li>
 
           <li className="nav-item mr-3">
-            <Link className="navLinks nav-link text-white" to="/ContactUs">Contact Us</Link>
+            <Link className="navLinks nav-link text-white" to="/ContactUs">
+              Contact Us
+            </Link>
           </li>
 
           <li className="nav-item mr-3">
-            <Link className="navLinks nav-link text-white" to="/Login">Login</Link>
+            <Link className="navLinks nav-link text-white" to="/Login">
+              Login
+            </Link>
           </li>
-
 
           {/* <li className="nav-item mr-3">
             <a className="navLinks nav-link text-white" href={Link}>
