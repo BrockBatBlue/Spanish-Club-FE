@@ -1,5 +1,5 @@
 import React from "react";
-import "../../Styles/Elements/DiscussionPg.css";
+import "../../Styles/Pages/DiscussionPg.css";
 
 function DiscussionPg() {
   return <>Discussion will happen here.</>;

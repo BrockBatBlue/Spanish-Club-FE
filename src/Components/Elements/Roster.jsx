@@ -24,14 +24,15 @@ function Roster() {
             <td>Julien Jakobson</td>
             <td>0334</td>
             <td>English B1-Teacups</td>
+            <td>28/03/2021</td>
             <td>Present</td>
             <td>Absent</td>
           </tr>
           <tr>
-            <td>Adriana</td>
-            <td>Jackson</td>
+            <td>Adriana Jackson</td>
             <td>0447</td>
             <td>English B2-Tigers</td>
+            <td>28/03/2021</td>
             <td>Present</td>
             <td>Absent</td>
           </tr>
