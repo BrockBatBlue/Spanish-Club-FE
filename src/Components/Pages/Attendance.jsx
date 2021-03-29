@@ -1,8 +1,15 @@
 import React from "react";
 import "../../Styles/Pages/Attendance.css";
+import Roster from "../Elements/Roster.jsx";
 
 function Attendance() {
-  return <>Will figure this attendance submission page out when I can</>;
+  return (
+    <>
+      <div>
+        <Roster />
+      </div>
+    </>
+  );
 }
 
 export default Attendance;
