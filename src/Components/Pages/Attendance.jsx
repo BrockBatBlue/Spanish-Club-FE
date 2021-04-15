@@ -1,12 +1,12 @@
 import React from "react";
 import "../../Styles/Pages/Attendance.css";
-import Roster from "../Elements/Roster.jsx";
+import RosterTick from "../Elements/RosterTick.jsx";
 
 function Attendance() {
   return (
     <>
       <div>
-        <Roster />
+        <RosterTick />
       </div>
     </>
   );

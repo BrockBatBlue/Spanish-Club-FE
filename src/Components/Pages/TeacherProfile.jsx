@@ -153,6 +153,10 @@ function TeacherProfile() {
                   type="text"
                   placeholder="lesson date(s)"
                 />
+                
+                {/* DATE AND TIME */}
+                <input class="form-control" type="datetime-local" id="projCreateStart" name="startDate">
+                </input>
                 <textarea
                   className="form-control"
                   id="lessonText"

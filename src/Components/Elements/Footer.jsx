@@ -8,7 +8,7 @@ function Footer() {
       <section className="footerStyles container-fluid">
         <footer className="pt-5  bg text-white">
           <div className="container-fluid">
-            <div className="row align-items-top text-center text-md-left">
+            <div className="row align-items-top text-md-left">
               <div className="col-12 col-sm-6 col-md-4 float-left">
                 <h3>
                   <strong>The Babel Library</strong>
@@ -39,7 +39,7 @@ function Footer() {
                   <a hre={Link}>infob@bootstraptor.com</a>
                 </p> */}
               {/* </div> */}
-              <div className="col-12 col-md-4 mt-5 mt-md-0 text-md-left">
+              <div className="col-12 col-sm-8 col-md-0 text-right">
                 <h3>
                   <strong>About Us</strong>
                 </h3>
@@ -47,6 +47,7 @@ function Footer() {
                   The Babel Library is an online language platform that helps
                   you reach your next language goal.
                 </p>
+                <br></br>
                 <br></br>
                 <br></br>
                 <div className="col text-center">

@@ -22,6 +22,7 @@ import DiscussionPg from "./Components/Pages/DiscussionPg.jsx";
 import "./App.css";
 import axios from "axios";
 
+
 // const [isLogged, setIsLogged] = useState(
 //   JSON.parse(localStorage.getItem("isLogged")) || false
 // );
@@ -78,6 +79,7 @@ function App() {
         <Route exact path="/ourservices" render={() => <OurServices />} />
         <Route exact path="/discussion" render={() => <DiscussionPg />} />
         <Route exact path="/resources" render={() => <ResourceUpload />} />
+      
       </Router>
       <Footer />
     </div>

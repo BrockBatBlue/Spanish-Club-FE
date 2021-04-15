@@ -21,11 +21,19 @@ function Navbar(isLoggedStu) {
   //   });
   // };
   return (
+    <div className="topnav" id="myTopnav">
     <nav className="navbar navbar-expand-lg">
       {/* <div className="container"> */}
-      <a className="babelBrand navbar-brand" href="index.html">
+      <a className="babelBrand navbar-brand" href="/">
         <img src={logo} alt="UI Kit" />
       </a>
+
+{/* HOW DOES THIS CREATE A HAMBURGERRR?!  */}
+      <button className="hamburger" id="hamburger">
+        <i className="fas fa-bars"></i>
+        
+        </button>
+      
       <button
         className="navbar-toggler"
         type="button"
@@ -38,7 +46,7 @@ function Navbar(isLoggedStu) {
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
-        <ul className="responsiveNav navbar-nav ml-auto mr-sm-2 mt-2 mt-lg-0">
+        <ul className=" nav-ul responsiveNav navbar-nav ml-auto mr-sm-2 mt-2 mt-lg-0" id="nav-ul">
           {/* <li className="nav-item active mr-3">
             <a className="navLinks nav-link text-white" href={Link}>
               Home <span className="sr-only">(current)</span>
@@ -106,7 +114,7 @@ function Navbar(isLoggedStu) {
                 className="rounded-circle u-box-shadow-sm mr-2"
                 width="35"
                 height="35"
-                src="http://via.placeholder.com/100/007bff/efefef"
+                src={logo}
                 alt="Htmlstream"
               />{" "}
               Elena
@@ -132,6 +140,17 @@ function Navbar(isLoggedStu) {
       </div>
       {/* </div> */}
     </nav>
+    </div>
   );
 }
+
+
 export default Navbar;
+
+
+// const hamburger=document.getElementById('hamburger');
+// const navUL = document.getElementById('nav-ul');
+
+// hamburger.addEventListener('click', ()=>{
+//   navUL.classList.toggle('show');
+// })
