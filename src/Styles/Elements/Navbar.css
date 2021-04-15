@@ -8,9 +8,70 @@ nav {
   display: flex;
   justify-content: flex-end;
 }
-.responsiveNav{
+
+.hamburger {
+  background-color: transparent;
+  border: 0;
+  color:white;
+  cursor: pointer;
+  font-size: 20px;
+  display:none;
+}
+
+.hamburger:focus {
+  outline: none;
+}
+/* .responsiveNav{
   margin-left:0 !important;
-}
-.navLinks{
+} */
+/* .navLinks{
   font-size: clamp(0.25rem, 1vw, 15px);
+} */
+
+
+@media screen and (max-width: 767px){
+
+  .nav-ul {
+    display: none;
+  }
+
+  .nav-ul.show{
+    display:flex;
+  }
+  
+  .hamburger{
+    display: block
+  }
 }
+/* @media screen and (max-width: 600px) {
+  .topnav .nav-item:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav .nav-item.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .nav-item.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive .nav-item {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .navbar-nav {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+} */
+
+/* https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp */
